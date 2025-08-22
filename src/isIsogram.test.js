@@ -8,7 +8,7 @@ describe('isIsogram', () => {
   });
 
   it(`'true' when we have different letters`, () => {
-    expect(isIsogram('abcde')).toBe(true);
+    expect(isIsogram('playgrounds')).toBe(true);
   });
 
   it(`'true' when we have empty sting`, () => {
@@ -16,14 +16,14 @@ describe('isIsogram', () => {
   });
 
   it(`'false' when we have similar letters`, () => {
-    expect(isIsogram('damask')).toBe(false);
+    expect(isIsogram('look')).toBe(false);
   });
 
   it(`'false' when we have similar letters with different case`, () => {
-    expect(isIsogram('Ana')).toBe(false);
+    expect(isIsogram('Adam')).toBe(false);
   });
 
-  it(`'false' when we have similar numbers`, () => {
-    expect(isIsogram('dima1991')).toBe(false);
+  it(`'false' when we have similar close letters with different case`, () => {
+    expect(isIsogram('Oops')).toBe(false);
   });
 });
